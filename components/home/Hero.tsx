@@ -4,7 +4,7 @@ import { OutcomesChart } from "@/components/home/OutcomesChart";
 export function Hero() {
   return (
     <section className="bg-grid relative overflow-hidden bg-primary-container text-white">
-      <div className="absolute -right-36 -top-32 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,rgba(201,226,101,0.16),transparent_68%)]" />
+      <div className="absolute -right-36 -top-32 h-[520px] w-[520px] rounded-full" />
 
       <div className="relative mx-auto grid max-w-[1280px] items-center gap-14 px-5 py-16 md:grid-cols-2 md:px-10 md:py-24">
         <div>
