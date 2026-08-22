@@ -54,7 +54,7 @@ export function BlogGrid() {
                 "rounded-full border border-surface-variant px-5 py-2 font-display text-[14px] font-medium transition-colors",
                 category === c
                   ? "bg-primary text-on-primary"
-                  : "bg-surface-container-low text-primary hover:bg-surface-variant"
+                  : "bg-primary text-primary hover:bg-surface-variant"
               )}
             >
               {c}

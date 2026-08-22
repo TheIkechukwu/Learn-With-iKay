@@ -4,8 +4,8 @@ import type { CaseStudy } from "@/types";
 const gradients: Record<string, string> = {
   "Cohort Capstone": "from-primary-container to-surface-tint",
   "Private 1-on-1": "from-primary to-primary-container",
-  "Corporate Training": "from-surface-tint to-tertiary-fixed-dim",
-  Mentorship: "from-primary-container to-on-tertiary-container",
+  "Corporate Training": "from-primary to-primary-container",
+  Mentorship: "from-primary to-primary-container",
 };
 
 export function CaseStudyDetail({ study }: { study: CaseStudy }) {

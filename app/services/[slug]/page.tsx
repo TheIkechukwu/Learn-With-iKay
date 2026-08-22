@@ -93,9 +93,10 @@ export default async function ServiceDetailPage({ params }: Props) {
           </p>
 
           <div className="mt-8.5 flex flex-wrap gap-3.5">
-          <Link
+       <Link
               href={ctaHref}
               className="group flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 font-display text-[15.5px] font-bold text-white transition-all hover:bg-surface-tint hover:shadow-lg"
+              style={{ color: "#ffffff" }}
             >
               {service.ctaLabel}
               <FiArrowRight className="transition-transform group-hover:translate-x-1" size={16} />

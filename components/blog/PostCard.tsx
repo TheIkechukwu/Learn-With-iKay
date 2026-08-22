@@ -4,13 +4,13 @@ import type { Post } from "@/types";
 const gradients: Record<string, string> = {
   "SQL Tutorials": "from-primary-container to-surface-tint",
   "Power BI": "from-primary to-primary-container",
-  "Excel Tips": "from-surface-tint to-tertiary-fixed-dim",
-  Statistics: "from-primary-container to-on-tertiary-container",
+  "Excel Tips": "from-primary to-primary-container",
+  Statistics: "from-primary to-primary-container",
   "Data Storytelling": "from-surface-tint to-primary",
   "Career Advice": "from-primary to-surface-tint",
   Python: "from-primary-container to-surface-tint",
   "Student Spotlights": "from-tertiary-fixed-dim to-surface-tint",
-  "Industry Trends": "from-primary to-on-primary-fixed-variant",
+  "Industry Trends": "from-primary to-primary-container",
 };
 
 function initials(name: string) {

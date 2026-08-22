@@ -3,6 +3,9 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { RouteProgressBar } from "@/components/layout/RouteProgressbar";
+import { NavigationLoader } from "@/components/layout/NavigationLoader";
+
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -72,6 +75,8 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="flex min-h-screen flex-col overflow-x-hidden bg-surface font-sans text-on-background antialiased selection:bg-tertiary-fixed selection:text-primary">
+       <NavigationLoader />
+        <RouteProgressBar />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

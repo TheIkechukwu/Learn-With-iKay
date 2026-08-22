@@ -28,7 +28,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-10 px-5 py-16 sm:grid-cols-2 md:px-10 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <Link href="/" className="flex items-center gap-2.5">
-            <Logo inverted />
+            <Logo />
             <span className="font-display text-base font-bold tracking-[-0.01em] text-white">
               Learn With iKay
             </span>
@@ -78,7 +78,10 @@ export function Footer() {
               </Link>
             ))}
           </div>
-          <div className="mt-7 font-display text-[15px] font-semibold text-white">Legal</div>
+        </div>
+
+        <div>
+          <div className="font-display text-[15px] font-semibold text-white">Legal</div>
           <div className="mt-4 grid gap-2.5">
             {legalLinks.map((l) => (
               <span
@@ -89,29 +92,6 @@ export function Footer() {
               </span>
             ))}
           </div>
-        </div>
-
-        <div>
-          <div className="font-mono text-[10.5px] tracking-[0.14em] text-tertiary-fixed">
-            THE THURSDAY QUERY
-          </div>
-          <p className="mt-4 text-[14.5px] leading-relaxed text-on-primary-container">
-            One practical lesson a week, a query pattern, a DAX measure, a
-            chart critique.
-          </p>
-          <form className="mt-4 flex gap-2">
-            <input
-              type="email"
-              placeholder="you@work.com"
-              className="flex-1 rounded-full border border-white/15 bg-white/6 px-4 py-2.75 text-sm text-white outline-none placeholder:text-white/40"
-            />
-            <button
-              type="submit"
-              className="rounded-full bg-tertiary-fixed px-5 py-2.75 font-display text-sm font-bold text-primary"
-            >
-              Join
-            </button>
-          </form>
         </div>
       </div>
 

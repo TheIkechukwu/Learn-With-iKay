@@ -44,7 +44,7 @@ export function Founder() {
           <div className="mt-8.5 grid grid-cols-3 gap-5 border-t border-surface-variant pt-7.5">
             {stats.map((s) => (
               <div key={s.label}>
-                <div className="font-display text-[26px] font-bold text-primary md:text-[30px]">
+                <div className="font-display text-[20px] font-bold text-primary md:text-[28px]">
                   {s.value}
                 </div>
                 <div className="mt-1 text-[13.5px] text-outline">{s.label}</div>
