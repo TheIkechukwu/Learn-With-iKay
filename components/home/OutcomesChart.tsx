@@ -175,7 +175,9 @@ export function OutcomesChart() {
                   <LabelList
                     dataKey="post"
                     position="top"
-                    formatter={(v: number) => `${v}%`}
+                    formatter={(v: React.ReactNode) =>
+                      typeof v === "number" ? `${v}%` : ""
+                    }
                     style={{
                       fontFamily: "var(--font-mono)",
                       fontSize: 10,
