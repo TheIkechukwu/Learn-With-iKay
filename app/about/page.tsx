@@ -87,7 +87,7 @@ export default function AboutPage() {
                   </p>
                   <div className="grid gap-4 text-[15.5px] leading-relaxed text-on-surface-variant">
                     <p>
-                      With over a decade of experience navigating the
+                      With a senior level of experience navigating the
                       complexities of enterprise data architectures,
                       Ikechukwu founded Learn With iKay to solve a persistent
                       industry problem: the disconnect between theoretical
@@ -194,10 +194,10 @@ export default function AboutPage() {
               Ikechukwu Emeka
             </h3>
             <p className="mt-4 text-[16px] leading-relaxed text-on-surface-variant">
-              Nine years across BI and analytics engineering, star-schema
-              modelling, Power BI semantic layers, DAX optimisation and the
-              unglamorous work of reconciling three systems that each think
-              they own the customer record.
+               A senior-level background across BI and analytics engineering,
+              star-schema modelling, Power BI semantic layers, DAX
+              optimisation and the unglamorous work of reconciling three
+              systems that each think they own the customer record.
             </p>
             <div className="mt-5.5 flex flex-wrap gap-2">
               {founderTags.map((t) => (
