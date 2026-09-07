@@ -79,13 +79,13 @@ export type Post = {
   imageNote: string;
 };
 
+
 export type Testimonial = {
   initials: string;
   name: string;
   role: string;
   program: string;
-  before: string;
-  after: string;
+  image: string;
   quote: string;
 };
 

@@ -8,16 +8,16 @@ export function ServicesPreview() {
     <section className="mx-auto max-w-[1280px] px-5 pt-20 md:px-10 md:pt-24">
       <div className="flex flex-wrap items-end justify-between gap-10">
         <div>
-          <Kicker>02 · PROGRAMS</Kicker>
+          <Kicker>02 · PROGRAMMES</Kicker>
           <h2 className="mt-4 font-display text-[30px] font-bold leading-[1.1] tracking-[-0.02em] text-primary md:text-[36px]">
-            Six ways to learn with us.
+            Three ways to learn with us.
           </h2>
         </div>
         <Link
           href="/services"
           className="flex items-center gap-1.5 border-b-2 border-tertiary-fixed pb-1 font-display text-[15px] font-semibold text-primary"
         >
-          View all services <FiArrowRight size={15} />
+          View all programmes <FiArrowRight size={15} />
         </Link>
       </div>
 
