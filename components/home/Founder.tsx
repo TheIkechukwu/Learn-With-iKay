@@ -27,7 +27,7 @@ export function Founder() {
             Ikechukwu Emeka
           </h2>
           <div className="mt-2 text-base font-medium text-surface-tint">
-            Analytics Lead · 9 years in BI, reporting &amp; data modelling
+            Analytics Lead · 5 years in BI, reporting &amp; data modelling
           </div>
           <p className="mt-5.5 text-[16.5px] leading-relaxed text-on-surface-variant">
             Ikechukwu has built reporting layers for fintech, logistics and
