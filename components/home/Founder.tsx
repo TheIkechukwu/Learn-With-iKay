@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Kicker } from "@/components/ui/Kicker";
 
 const stats = [
-  { value: "9 yrs", label: "Industry practice" },
-  { value: "512", label: "Learners mentored" },
-  { value: "25", label: "Cohort cap" },
+  { value: "5 yrs", label: "Industry practice" },
+  { value: "50", label: "Learners mentored" },
+  { value: "5", label: "Cohort cap" },
 ];
 
 export function Founder() {

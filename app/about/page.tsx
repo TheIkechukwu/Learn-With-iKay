@@ -70,7 +70,7 @@ export default function AboutPage() {
               <div className="flex flex-col md:flex-row">
                 <div className="relative h-72 w-full flex-shrink-0 md:h-auto md:w-[280px]">
                   <Image
-                    src="/ike.jpg"
+               src="/ike2.jpeg"
                     alt="Ikechukwu Emeka, Founder and Lead Instructor at Learn With iKay"
                     fill
                     sizes="(min-width: 768px) 280px, 100vw"
@@ -123,18 +123,7 @@ export default function AboutPage() {
                   reconcile.
                 </p>
               </div>
-              <div className="mt-8 border-t border-primary-container pt-8">
-                <div className="flex items-center gap-3">
-                  <span className="font-display text-[30px] font-bold text-tertiary-fixed">
-                    5k+
-                  </span>
-                  <span className="font-mono text-[11px] uppercase tracking-widest text-primary-fixed">
-                    Students
-                    <br />
-                    Empowered
-                  </span>
-                </div>
-              </div>
+          
             </div>
           </div>
         </div>
@@ -192,7 +181,7 @@ export default function AboutPage() {
         <div className="hover-lift grid items-center gap-10 rounded-[28px] border border-surface-variant bg-surface-container-lowest p-8 shadow-sm md:grid-cols-[320px_1fr] md:gap-12 md:p-12">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src="/ike.jpg"
+              src="/ike2.jpeg"
               alt="Ikechukwu Emeka teaching a Learn With iKay cohort"
               fill
               sizes="(min-width: 768px) 320px, 100vw"

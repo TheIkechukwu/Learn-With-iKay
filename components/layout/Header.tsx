@@ -53,7 +53,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.18 }}
-                        className="glass-card absolute left-1/2 top-full z-50 w-[680px] -translate-x-1/2 p-3"
+                        className="bg-white absolute left-1/2 top-full z-50 w-[680px] -translate-x-1/2 p-3"
                       >
                         <div className="grid grid-cols-3 gap-1">
                           {SERVICES.map((s) => (

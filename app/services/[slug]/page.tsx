@@ -28,30 +28,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function buildGlance(serviceId: string, duration: string, priceFrom: string): GlanceItem[] {
-  const format =
-    serviceId === "corporate"
-      ? "On-site or remote"
-      : serviceId === "kids"
-      ? "Live online, small groups"
-      : "Live online, mentor-led";
-
-  const cohortSize =
-    serviceId === "private"
-      ? "1 learner"
-      : serviceId === "kids"
-      ? "12 learners"
-      : serviceId === "workshops"
-      ? "40 seats"
-      : "25 learners";
-
-  const nextIntake =
-    serviceId === "kids"
-      ? "5 October 2026"
-      : serviceId === "workshops"
-      ? "30 August 2026"
-      : serviceId === "cohort"
-      ? "14 September 2026"
-      : "Rolling";
+  const isPersonalised = serviceId === "stem";
+  const format = isPersonalised ? "Live online, 1-on-1" : "Live online, cohort-based";
+  const cohortSize = isPersonalised ? "1 learner" : "Small cohort";
+  const nextIntake = isPersonalised ? "Rolling enrolment" : "Apply to join the next cohort";
 
   return [
     { k: "Format", v: format },
@@ -68,7 +48,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   if (!service) notFound();
 
   const glance = buildGlance(service.id, service.duration, service.priceFrom);
-  const ctaHref = service.id === "corporate" ? "/contact" : "/enroll";
+  const ctaHref = service.id === "stem" ? "/contact" : "/enroll";
 
   return (
     <>
@@ -84,7 +64,6 @@ export default async function ServiceDetailPage({ params }: Props) {
             <FiArrowLeft size={13} /> ALL SERVICES
           </Link>
 
-       
           <h1 className="text-pretty mt-6 max-w-3xl font-display text-[32px] font-bold leading-[1.1] tracking-[-0.02em] text-primary md:text-[48px]">
             {service.hero}
           </h1>
@@ -93,7 +72,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           </p>
 
           <div className="mt-8.5 flex flex-wrap gap-3.5">
-       <Link
+            <Link
               href={ctaHref}
               className="group flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 font-display text-[15.5px] font-bold text-white transition-all hover:bg-surface-tint hover:shadow-lg"
               style={{ color: "#ffffff" }}
@@ -108,8 +87,6 @@ export default async function ServiceDetailPage({ params }: Props) {
               Ask a question
             </Link>
           </div>
-
-          
         </div>
       </section>
 
@@ -170,12 +147,12 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1280px] px-5 pt-20 md:px-10">
+<section className="mx-auto max-w-[1280px] px-5 pt-20 md:px-10">
         <Kicker>PRICING</Kicker>
         <h2 className="mt-4 font-display text-[26px] font-bold tracking-[-0.02em] text-primary md:text-[34px]">
           {service.pricingTitle}
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5">
           {service.pricing.map((tier, i) => (
             <PricingCard
               key={tier.tier}

@@ -8,24 +8,23 @@ import { SERVICES } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Enroll",
-  description:
-    "Apply for your seat in Cohort 12. Applications close 7 September 2026 · twenty-five seats, reviewed weekly.",
+  description: "Apply for a programme at Learn With iKay. Applications are reviewed weekly.",
 };
 
 const admissionsFaqs = [
   {
-    q: "Cohort Deadlines",
-    a: "Applications close exactly 7 days prior to the start of a new cohort. Late applications are rolled to the subsequent session.",
+    q: "How are applications reviewed?",
+    a: "We review applications every Monday and Thursday. Expect a response within three working days.",
   },
   {
     q: "Prerequisites",
-    a: "Basic computer literacy is required for all tracks. Advanced tracks require a foundational knowledge of Python and core mathematics.",
+    a: "Data Analysis for Beginners assumes no prior experience. The Advanced course assumes comfort with basic Excel and SQL. STEM Tutoring has no prerequisites.",
   },
   {
     q: "Re-application",
-    a: "If not accepted, candidates may re-apply for a future cohort after a 30-day waiting period, demonstrating progress in required foundational areas.",
+    a: "If we ask you to reapply, you're welcome to do so once you've addressed the feedback shared with you.",
   },
-  ...SERVICES.find((s) => s.id === "cohort")!.faqs.slice(0, 2),
+  ...SERVICES[0].faqs.slice(0, 2),
 ];
 
 export default function EnrollPage() {
@@ -41,12 +40,11 @@ export default function EnrollPage() {
           </h1>
           <p className="mt-5 text-[17px] leading-relaxed text-on-surface-variant">
             Our rigorous programs require high commitment. Please complete
-            the application below to begin the screening process for our
-            upcoming cohorts.
+            the application below to begin the screening process.
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-12">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <EnrollForm />
           </div>

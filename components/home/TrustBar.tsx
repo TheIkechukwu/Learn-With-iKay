@@ -13,8 +13,8 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 512, suffix: "+", label: "Students Trained" },
-  { value: 9, label: "Cohorts Delivered" },
+  { value: 50, suffix: "+", label: "Students Trained" },
+  { value: 5, label: "Cohorts Delivered" },
   { value: 78, suffix: "%", label: "Placement Rate" },
   { value: 4.9, decimals: 1, suffix: "/5", label: "Average Rating" },
 ];
