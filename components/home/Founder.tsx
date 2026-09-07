@@ -37,8 +37,7 @@ export function Founder() {
             dashboard that answers the question the business actually asked.
           </p>
           <p className="mt-4 text-[16.5px] leading-relaxed text-on-surface-variant">
-            Every LWi cohort is led personally by him, capped at 25 learners,
-            and graded against a rubric borrowed from real analyst hiring
+            Every LWi cohort is led personally by him, and graded against a rubric borrowed from real analyst hiring
             loops.
           </p>
           <div className="mt-8.5 grid grid-cols-3 gap-5 border-t border-surface-variant pt-7.5">
