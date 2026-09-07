@@ -131,7 +131,7 @@ export function TestimonialsMarquee() {
       <div className="mx-auto max-w-[1280px] px-5 text-center md:px-10">
         <Kicker className="text-center">SUCCESS STORIES</Kicker>
         <h2 className="mt-4 font-display text-[30px] font-bold leading-[1.1] tracking-[-0.02em] text-primary md:text-[36px]">
-          512 analysts trained. Here is what changed for them.
+          Multiple analysts trained. Here is what changed for them.
         </h2>
       </div>
 

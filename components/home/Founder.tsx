@@ -13,7 +13,7 @@ export function Founder() {
       <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-surface-variant">
           <Image
-            src="/ike.jpg"
+            src="/ike2.jpeg"
             alt="Ikechukwu Emeka, Founder and Lead Instructor at Learn With iKay"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
