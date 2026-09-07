@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { RouteProgressBar } from "@/components/layout/RouteProgressbar";
 import { NavigationLoader } from "@/components/layout/NavigationLoader";
 import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 
 const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
@@ -110,6 +111,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-screen flex-col overflow-x-hidden bg-surface font-sans text-on-background antialiased selection:bg-tertiary-fixed selection:text-primary">
         <OrganizationJsonLd />
+           <GoogleAnalytics />
         <NavigationLoader />
         <RouteProgressBar />
         <Header />
